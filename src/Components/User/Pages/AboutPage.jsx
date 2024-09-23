@@ -24,7 +24,7 @@ export const AboutPage = () => {
             that ensure a seamless user experience. My expertise lies in
             technologies like HTML, CSS, and JavaScript, along with frameworks
             and libraries such as React.js. I specialize in crafting layouts,
-            styling components, handling client-side logic, and optimizing
+            styling Components, handling client-side logic, and optimizing
             performance to make sure the website looks great and works
             efficiently across all devices.
           </p>

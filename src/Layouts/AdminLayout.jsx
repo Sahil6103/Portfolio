@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { AdminHeader } from "../components/admin/Header/AdminHeader";
-import { AdminSidebar } from "../components/admin/Sidebar/AdminSidebar";
+import { AdminHeader } from "../Components/admin/Header/AdminHeader";
+import { AdminSidebar } from "../Components/admin/Sidebar/AdminSidebar";
 
 export const AdminLayout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
