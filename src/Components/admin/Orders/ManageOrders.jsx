@@ -39,80 +39,80 @@ const TABLE_ROWS = [
 export const ManageOrders = () => {
   return (
     <>
-      <div className="list flex flex-col gap-5">
+      <div className="list mb-4">
         <h1 className="text-[1.8rem] font-bold">Orders List</h1>
-        <Card className="h-full w-full overflow-scroll">
-          <table className="w-full min-w-max table-auto text-left">
-            <thead>
-              <tr>
-                {TABLE_HEAD.map((head) => (
-                  <th
-                    key={head}
-                    className="border-b border-gray-200 bg-gray-200 p-4 text-[1.1rem]"
+      </div>
+      <Card className="h-full w-full overflow-scroll">
+        <table className="w-full min-w-max table-auto text-left">
+          <thead>
+            <tr>
+              {TABLE_HEAD.map((head) => (
+                <th
+                  key={head}
+                  className="border-b border-gray-200 bg-gray-200 p-4 text-[1.1rem]"
+                >
+                  <Typography
+                    variant="small"
+                    color="black"
+                    className="font-bold leading-none opacity-80"
                   >
+                    {head}
+                  </Typography>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {TABLE_ROWS.map(({ name, job, date }, index) => {
+              const isLast = index === TABLE_ROWS.length - 1;
+              const classes = isLast ? "p-4" : "p-4 border-b border-gray-300";
+
+              return (
+                <tr key={name}>
+                  <td className={classes}>
                     <Typography
                       variant="small"
-                      color="black"
-                      className="font-bold leading-none opacity-80"
+                      color="blue-gray"
+                      className="font-normal"
                     >
-                      {head}
+                      {name}
                     </Typography>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {TABLE_ROWS.map(({ name, job, date }, index) => {
-                const isLast = index === TABLE_ROWS.length - 1;
-                const classes = isLast ? "p-4" : "p-4 border-b border-gray-300";
-
-                return (
-                  <tr key={name}>
-                    <td className={classes}>
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="font-normal"
-                      >
-                        {name}
-                      </Typography>
-                    </td>
-                    <td className={classes}>
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="font-normal"
-                      >
-                        {job}
-                      </Typography>
-                    </td>
-                    <td className={classes}>
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="font-normal"
-                      >
-                        {date}
-                      </Typography>
-                    </td>
-                    <td className={classes}>
-                      <Typography
-                        as="a"
-                        href="#"
-                        variant="small"
-                        color="blue-gray"
-                        className="font-medium"
-                      >
-                        Delete
-                      </Typography>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </Card>
-      </div>
+                  </td>
+                  <td className={classes}>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="font-normal"
+                    >
+                      {job}
+                    </Typography>
+                  </td>
+                  <td className={classes}>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="font-normal"
+                    >
+                      {date}
+                    </Typography>
+                  </td>
+                  <td className={classes}>
+                    <Typography
+                      as="a"
+                      href="#"
+                      variant="small"
+                      color="blue-gray"
+                      className="font-medium"
+                    >
+                      Delete
+                    </Typography>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </Card>
     </>
   );
 };
