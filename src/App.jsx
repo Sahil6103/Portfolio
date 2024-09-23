@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 /* ----------------------------- User Components ----------------------------- */
-import { Home } from "./components/User/Home";
+import { Home } from "./Components/User/Home";
 import { UserLayout } from "./Layouts/UserLayout";
 import { AboutPage } from "./components/User/Pages/AboutPage";
 import { ContactPage } from "./components/User/Pages/ContactPage";
