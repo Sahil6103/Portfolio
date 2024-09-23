@@ -58,7 +58,7 @@ export const Project = () => {
               tech2={`CSS`}
               tech3={`JavaScript`}
               tech4={`Tailwind CSS`}
-              link={`"https://interiia.netlify.app/`}
+              link={`https://interiia.netlify.app/`}
             />
 
             <ProjectCard
@@ -72,7 +72,7 @@ export const Project = () => {
               tech2={`CSS`}
               tech3={`JavaScript`}
               tech4={`Tailwind CSS`}
-              link={`"https://skyhiigh.netlify.app`}
+              link={`https://skyhiigh.netlify.app/`}
             />
           </div>
         </div>
