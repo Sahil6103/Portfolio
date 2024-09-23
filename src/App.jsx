@@ -2,25 +2,25 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 /* ----------------------------- User Components ----------------------------- */
-import { Home } from "./Components/User/Home";
 import { UserLayout } from "./Layouts/UserLayout";
-import { AboutPage } from "./components/User/Pages/AboutPage";
-import { ContactPage } from "./components/User/Pages/ContactPage";
-import { ProjectPage } from "./components/User/Pages/ProjectPage";
+import { Home } from "./Components/User/Home";
+import { AboutPage } from "./Components/User/Pages/AboutPage";
+import { ContactPage } from "./Components/User/Pages/ContactPage";
+import { ProjectPage } from "./Components/User/Pages/ProjectPage";
 
 /* ---------------------------- Admin Components ---------------------------- */
 import { AdminLayout } from "./Layouts/AdminLayout";
-import { AdminLogin } from "./components/admin/Login/AdminLogin";
-import { AdminDashboard } from "./components/admin/Dashboard/AdminDashboard";
-import { ManageCustomers } from "./components/admin/Customer/ManageCustomers";
-import { AddCategory } from "./components/admin/Category/AddCategory";
-import { ManageCategory } from "./components/admin/Category/ManageCategory";
-import { AddProducts } from "./components/admin/Products/AddProducts";
-import { AddSubcategory } from "./components/admin/Subcategory/AddSubcategory";
-import { ManageProducts } from "./components/admin/Products/ManageProducts";
-import { ManageSubcategory } from "./components/admin/Subcategory/ManageSubcategory";
-import { ManageOrders } from "./components/admin/Orders/ManageOrders";
-import { ManageReviews } from "./components/admin/Review/ManageReviews";
+import { AdminLogin } from "./Components/admin/Login/AdminLogin";
+import { AdminDashboard } from "./Components/admin/Dashboard/AdminDashboard";
+import { ManageCustomers } from "./Components/admin/Customer/ManageCustomers";
+import { AddCategory } from "./Components/admin/Category/AddCategory";
+import { ManageCategory } from "./Components/admin/Category/ManageCategory";
+import { AddProducts } from "./Components/admin/Products/AddProducts";
+import { AddSubcategory } from "./Components/admin/Subcategory/AddSubcategory";
+import { ManageProducts } from "./Components/admin/Products/ManageProducts";
+import { ManageSubcategory } from "./Components/admin/Subcategory/ManageSubcategory";
+import { ManageOrders } from "./Components/admin/Orders/ManageOrders";
+import { ManageReviews } from "./Components/admin/Review/ManageReviews";
 
 export const App = () => {
   return (
