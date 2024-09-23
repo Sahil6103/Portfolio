@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { ABOUT_IMG } from "../../assets/index";
+import { ABOUT_IMG, RESUME } from "../../assets/index";
 
 export const About = () => {
   return (
@@ -28,7 +28,7 @@ export const About = () => {
           devices.
         </p>
         <a
-          href="src/assets/Sahil Dhandhukiya.pdf"
+          href={RESUME}
           download={"Sahil Dhandhukiya.pdf"}
           className="bg-gray-300 w-full md:w-[60%] lg:w-[50%] xl:w-[35%] flex justify-center items-center mt-6 py-3 text-[1.05rem] rounded-lg"
         >

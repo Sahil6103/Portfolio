@@ -10,6 +10,7 @@ import COMIKO_IMG from "./img/comiko.png";
 import AIRLINE_IMG from "./img/airline.png";
 import INTERIA_IMG from "./img/interia.png";
 import SKYHIGH_IMG from "./img/skyhigh.png";
+import RESUME from "./Sahil Dhandhukiya.pdf";
 
 export {
   HERO_IMG,
@@ -24,4 +25,5 @@ export {
   AIRLINE_IMG,
   INTERIA_IMG,
   SKYHIGH_IMG,
+  RESUME,
 };
