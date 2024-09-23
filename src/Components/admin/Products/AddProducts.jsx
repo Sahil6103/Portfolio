@@ -85,15 +85,15 @@ export function AddProducts() {
             >
               Select Category
             </Typography>
-            <div className="w-72">
-              <Select variant="outlined" label="Select Version">
-                <Option>Material Tailwind HTML</Option>
-                <Option>Material Tailwind React</Option>
-                <Option>Material Tailwind Vue</Option>
-                <Option>Material Tailwind Angular</Option>
-                <Option>Material Tailwind Svelte</Option>
-              </Select>
-            </div>
+            <select
+              id="category"
+              class="bg-[#e1e0e0a6] rounded-lg block w-full p-2.5 "
+            >
+              <option selected>Select Category</option>
+              <option value="US">Electronics</option>
+              <option value="CA">Clothes</option>
+              <option value="FR">Kitchen</option>
+            </select>
 
             <Typography
               variant="h6"
